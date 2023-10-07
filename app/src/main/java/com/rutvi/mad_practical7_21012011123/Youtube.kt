@@ -10,7 +10,7 @@ class Youtube : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_youtube)
         val youtubeId = "fJn9B64Znrk"
-        val youWebView = findViewById<WebView>(R.id.webview)
+        val youWebView = findViewById<WebView>(R.id.WebView)
         val webSettings : WebSettings = youWebView.settings
         webSettings.javaScriptEnabled=true
         webSettings.loadWithOverviewMode=true

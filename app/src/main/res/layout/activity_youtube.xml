@@ -7,18 +7,29 @@
     tools:context=".Youtube">
 
     <WebView
-        android:id="@+id/webview"
+        android:id="@+id/WebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" >
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="182dp"
-            android:layout_y="182dp"
-            android:clickable="true"
+            android:layout_x="329dp"
+            android:layout_y="638dp"
             app:srcCompat="@android:drawable/ic_menu_gallery" />
     </WebView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
